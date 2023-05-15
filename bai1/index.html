@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tổng các số nguyên tố trong khoảng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="number"] {
+      width: 200px;
+      padding: 5px;
+    }
+    button {
+      padding: 8px 16px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      background: #000;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tổng các số nguyên tố trong khoảng</h1>
+  <label for="number1">Số a:</label>
+  <input type="number" id="number1" min="0">
+  <br>
+  <label for="number2">Số b:</label>
+  <input type="number" id="number2" min="0">
+  <br>
+  <button onclick="calculatePrimeSum()">Tính tổng</button>
+  <div id="result"></div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
